@@ -23,9 +23,18 @@ As melhorias implementadas são:
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **🌐 HTML5**: Estrutura básica da página e formulários.
-- **🎨 CSS3**: Estilos e responsividade da interface.
-- **💻 JavaScript**: Lógica de validação, controle de armazenamento local e interação do sistema.
-- **💾 LocalStorage**: Armazenamento temporário dos dados do formulário no navegador.
-- **🧑‍💻 Git**: Controle de versão do código-fonte.
+- ** HTML5**: Estrutura básica da página e formulários.
+- ** CSS3**: Estilos e responsividade da interface.
+- ** JavaScript**: Lógica de validação, controle de armazenamento local e interação do sistema.
+- ** LocalStorage**: Armazenamento temporário dos dados do formulário no navegador.
+- ** Git**: Controle de versão do código-fonte.
+
+## 🧩 Funcionalidades Principais
+
+- ** Formulário de Inscrição Interativo**: Valida os campos em tempo real, garantindo que os dados inseridos sejam corretos antes do envio.
+- ** Armazenamento Local**: Utilização do LocalStorage para garantir que os dados preenchidos não se percam caso a página seja recarregada.
+- ** Sistema de Login**: Permite que os candidatos se registrem, façam login e acompanhem seu progresso ao longo do processo de inscrição.
+- ** Responsividade**: A interface do sistema foi projetada para ser totalmente funcional e visualmente agradável tanto em dispositivos móveis quanto em desktops.
+- ** Controle de Versão**: O sistema possui um histórico de commits bem estruturado, o que facilita o acompanhamento das mudanças realizadas no código.
+
 
