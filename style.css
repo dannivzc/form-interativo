@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #FFFFFF;
+    color: #57534E;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 10px;
+    max-width: 500px;
+} 
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.cabecalho {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho__menu {
+    width: 80px;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+.cabecalho__menu__voltar {
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    gap: 8px;
+}
+
+strong {
+    color: #E43A12;
+}
+
+.container {
+    padding: 1% 6%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.cabecalho__formulario {
+    display: flex;
+    width: 528px;
+    height: 86px;
+    margin-bottom: 24px;
+}
+
+.cabecalho__formulario__menu {
+    width: 528px;
+    height: 134px;
+    gap: 24px;
+}
+
+.cabecalho__formulario__titulo {
+    width: 528px;
+    height: 30px;
+    font-size: 24px;
+    gap: 8px;
+    color: #292524;
+    margin-bottom: 8px;
+}
+
+.cabecalho__formulario__texto {
+    display: flex;
+    font-size: 16px;
+    display: flex;
+    width: 528px;
+    height: 48px;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.cabecalho__formulario__informacoes {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container__formulario__dados {
+    margin-top: 24px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__botoes {
+    display: flex;
+    margin-top: 20px;
+    justify-content: end;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container__botoes__menu {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.container__botao__cancelar {
+    border: 1px solid #E43A12;
+    width: 123px;
+    border-radius: 8px;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #E43A12;
+}
+
+.container__botao__cancelar:hover {
+    background-color: #D6D3D1;
+}
+
+.container__botao__inscricao {
+    background-color: #E43A12;
+    width: 169px;
+    border-radius: 8px;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container__botao__inscricao:hover {
+    background-color: #57534E;
+}
+
+.container__trilhas__aprendizagem {
+    display: flex;
+    gap: 24px;
+}
+
+.container__termos {
+    margin-top: 40px;
+}
+
+.container__termos__checkbox {
+    gap: 5px;
+}
+
+.container__ilustracao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2135A6; 
+    width: 100%; 
+}
+
+.container__logo__trilhas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 212.25px;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+
+
+
+
+
+
+
