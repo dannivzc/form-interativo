@@ -67,6 +67,24 @@ strong {
     color: #E43A12;
 }
 
+.container__formulario__anexos{
+    position: relative;
+
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.container__formulario__anexos.input-document{
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     padding: 1% 6%;
     min-width: 200px;
@@ -137,6 +155,28 @@ strong {
     margin-bottom: 60px;
 }
 
+.trilhas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trilha-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.trilha-box.selecionada {
+    border: 2px solid #E43A12;
+    box-shadow: 0 0 10px #E43A12(76, 175, 80, 0.5);
+}
+
 .container__botao__cancelar {
     border: 1px solid #E43A12;
     width: 123px;
@@ -144,6 +184,8 @@ strong {
     padding: 12px 0;
     text-decoration: none;
     color: #E43A12;
+    background: none;
+    cursor: pointer;
 }
 
 .container__botao__cancelar:hover {
@@ -157,11 +199,14 @@ strong {
     padding: 12px 0;
     text-decoration: none;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
 }
 
 .container__botao__inscricao:hover {
     background-color: #57534E;
 }
+
 
 .container__trilhas__aprendizagem {
     display: flex;
@@ -193,10 +238,46 @@ strong {
     margin-left: 150px;
 }
 
+.is-invalid {
+    border-color: #dc3545 !important;
+}
 
+.mensagem-erro {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
 
+/* Responsive*/
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .cabecalho__formulario, 
+    .cabecalho__formulario__menu,
+    .cabecalho__formulario__titulo,
+    .cabecalho__formulario__texto {
+        width: 100%;
+        height: auto;
+    }
+    
+    .trilha-box {
+        width: 100%;
+    }
+    
+    .container__ilustracao {
+        order: -1;
+        padding: 20px 0;
+    }
+    
+    .container__logo__trilhas {
+        margin-left: 0;
+    }
 
-
-
-
-
+}
