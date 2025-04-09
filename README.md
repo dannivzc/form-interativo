@@ -21,3 +21,11 @@ As melhorias implementadas são:
 - **📱 Responsividade**: Garantia de que o sistema seja totalmente funcional tanto em dispositivos móveis quanto em desktops.
 - **📂 Controle de Versão e Documentação**: Histórico de commits bem estruturado, com documentação explicativa e detalhada sobre como rodar o projeto localmente.
 
+## 🛠️ Tecnologias Utilizadas
+
+- **🌐 HTML5**: Estrutura básica da página e formulários.
+- **🎨 CSS3**: Estilos e responsividade da interface.
+- **💻 JavaScript**: Lógica de validação, controle de armazenamento local e interação do sistema.
+- **💾 LocalStorage**: Armazenamento temporário dos dados do formulário no navegador.
+- **🧑‍💻 Git**: Controle de versão do código-fonte.
+
