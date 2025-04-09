@@ -14,7 +14,7 @@
             <div class="cabecalho__menu">
                 <div class="cabecalho__menu__voltar">
                     <img src="./assets/seta.png" alt="Imagem de uma seta">
-                    Voltar
+                    <a href="login.html">Voltar</a>
                 </div>
             </div>
             <section class="cabecalho__formulario">
@@ -46,6 +46,7 @@
                         <label for="sexo">Sexo</label>
                         <select id="sexo" name="sexo" required>
                             <option>Selecione</option>
+                            <option>Masculino</option>
                             <option>Feminino</option>
                             <option>Não-binário</option>
                             <option>Prefiro não informar</option>
@@ -61,7 +62,7 @@
                     </div>
                     <div class="container__formulario__anexos">
                         <h4 class="documento_identidade">Documento de identidade</h4>
-                        <img src="assets/uploaddroparea.png" alt="Área para upload de documento de identidade">
+                        <input class="input-document" type="file" id="comprovante" name="comprovante" required>
                     </div>
                     <div class="container__endereco__residencial">
                         <h4 class="endereco__residencial">Endereço residencial</h4>
@@ -84,21 +85,35 @@
                        <label for="estado">Estado</label>
                        <input type="text" id="estado" name="estado" placeholder="MA" required>
                    </div>
-                   <div class="container__anexo__residencial">
-                       <p class="comprovante__residencial">Comprovante de residência</p>
-                       <img src="assets/uploaddroparea.png" alt="Área para upload de comprovante de residência">
+                   <div class="container__formulario__anexos">
+                       <h4 class="documento_identidade">Comprovante de Residência</h4>
+                       <input class="input-document" type="file" id="comprovante" name="comprovante" required>
                    </div>
-                   <div class="container__trilhas">
-                       <h4 class="container__trilhas__aprendizagem">Trilhas de aprendizagem</h4>
-                       <p class="container__selecione_trilhas">Selecione apenas uma trilha</p>
-                       <div class="container__trilhas__imagens">
-                            <img src="assets/front-end.png" alt="imagem da trilha front-end">
-                            <img src="assets/back-end.png" alt="imagem da trilha back-end">
-                            <img src="assets/jogos.png" alt="imagem da trilha de jogos">
-                            <img src="assets/ux.png" alt="imagem da trilha de UX">
-                            <img src="assets/dados.png" alt="imagem da trilha de dados">
+                   <h2>Trilhas de Aprendizagem</h2>
+                   <div class="trilhas-container">
+                       <div class="trilha-box" data-trilha="frontend">
+                           <img src="assets/frontend.png" alt="Front-end">
+                           <p>Programação Front-end</p>
                        </div>
-                    </div>
+                       <div class="trilha-box" data-trilha="backend">
+                           <img src="assets/backend.png" alt="Back-end">
+                           <p>Programação Back-end</p>
+                       </div>
+                       <div class="trilha-box" data-trilha="jogos">
+                           <img src="assets/jogos.png" alt="Jogos">
+                           <p>Programação de Jogos</p>
+                       </div>
+                       <div class="trilha-box" data-trilha="design">
+                           <img src="assets/jogos.png" alt="Design">
+                           <p>Design e Experiência</p>
+                       </div>
+                       <div class="trilha-box" data-trilha="dados">
+                           <img src="assets/dados.png" alt="Dados">
+                           <p>Ciência de Dados</p>
+                       </div>
+                   </div>
+                   <input type="hidden" id="trilhaSelecionada" name="trilhaSelecionada" required>
+
                    <div class="container__termos">
                     <label class="container__termos__checkbox">
                        <input type="checkbox" id="termos" name="termos" required>
@@ -119,10 +134,10 @@
     </main>   
     <div class="container__ilustracao">
         <div class="container__logos">
-            <img class="container__logo__inova" src="./assets/inova.png" alt="Ilustração do Inova">
-            <img class="container__logo__trilhas" src="./assets/logos.png" alt="Logo Trilhas Inova">
+            <img class="container__logo__inova" src="assets/inova.png" alt="Ilustração do Inova">
+            <img class="container__logo__trilhas" src="assets/logo-trilhas-inova.png" alt="Logo Trilhas Inova">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
- 
