@@ -144,7 +144,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-
+    // Carrega dados do formulário do LocalStorage
+    const dadosSalvos = JSON.parse(localStorage.getItem('dadosFormulario'));
+    if (dadosSalvos) {
+        Object.keys(dadosSalvos).forEach(chave => {
+            const input = document.getElementById(chave);
+            if (input) {
+                input.value = dadosSalvos[chave];
+            }
+        });
+    }
     // Event listeners
     document.getElementById('cep').addEventListener('blur', buscarCEP);
     
