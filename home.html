@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/icon-inova.png" type="image/x-icon">
 </head>
+
 <body>
     <main class="container">
         <div class="cabecalho">
@@ -17,134 +19,158 @@
                     <a href="index.html">Voltar</a>
                 </div>
             </div>
+
             <section class="cabecalho__formulario">
                 <div class="cabecalho__formulario__menu">
-                <h1 class="cabecalho__formulario__titulo">Formulário de Inscrição</h1>
-                <p class="cabecalho__formulario__texto">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
-                <h5 class="cabecalho__formulario__informacoes">Informações do participante</h5>
+                    <h1 class="cabecalho__formulario__titulo">Formulário de Inscrição</h1>
+                    <p class="cabecalho__formulario__texto">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+                    <h5 class="cabecalho__formulario__informacoes">Informações do participante</h5>
                 </div>
-           </section>
+            </section>
         </div>
-                   <div class="form">
-                       <form action="#">
-                   </div>
-                   <div class="container__formulario__dados">
+
+        <form action="#" id="formulario">
+            <div class="form">
+                <div class="container__formulario__dados">
+
                     <div class="input-box">
                         <label for="nomeCompleto">Nome completo</label>
-                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome completo"
-                        required>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome completo" required>
                     </div>
+
                     <div class="input-box">
                         <label for="dataDeNascimento">Data de nascimento</label>
                         <input type="date" id="dataDeNascimento" name="dataDeNascimento" required>
                     </div>
+
                     <div class="input-box">
                         <label for="cpf">CPF</label>
                         <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
                     </div>
+
                     <div class="input-box">
                         <label for="sexo">Sexo</label>
                         <select id="sexo" name="sexo" required>
-                            <option>Selecione</option>
-                            <option>Masculino</option>
-                            <option>Feminino</option>
-                            <option>Não-binário</option>
-                            <option>Prefiro não informar</option>
-                       </select>
+                            <option value="">Selecione</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Não-binário">Não-binário</option>
+                            <option value="Prefiro não informar">Prefiro não informar</option>
+                        </select>
                     </div>
+
                     <div class="input-box">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
+
                     <div class="input-box">
                         <label for="telefone">Telefone</label>
                         <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
                     </div>
+
                     <div class="container__formulario__anexos">
                         <h4 class="documento_identidade">Documento de identidade</h4>
-                        <input class="input-document" type="file" id="comprovante" name="comprovante" required>
+                        <input class="input-document" type="file" id="documentoIdentidade" name="documentoIdentidade" required>
                     </div>
+
                     <div class="container__endereco__residencial">
                         <h4 class="endereco__residencial">Endereço residencial</h4>
+
                         <label for="cep">CEP</label>
                         <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
                     </div>
+
                     <div class="input-box">
                         <label for="rua">Rua</label>
                         <input type="text" id="rua" name="rua" placeholder="Rua 1" required>
                     </div>
+
                     <div class="input-box">
                         <label for="numero">Número</label>
                         <input type="text" id="numero" name="numero" placeholder="00" required>
-                   </div>
-                   <div class="input-box">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" name="cidade" placeholder="Ex:São Luís" required>
-                   </div>
-                   <div class="input-box">
-                       <label for="estado">Estado</label>
-                       <input type="text" id="estado" name="estado" placeholder="MA" required>
-                   </div>
-                   <div class="container__formulario__anexos">
-                       <h4 class="documento_identidade">Comprovante de Residência</h4>
-                       <input class="input-document" type="file" id="comprovante" name="comprovante" required>
-                   </div>
-                   <h2>Trilhas de Aprendizagem</h2>
-                   <div class="trilhas-container">
-                       <div class="trilha-box" data-trilha="frontend">
-                           <img src="assets/frontend.png" alt="Front-end">
-                           <p>Programação Front-end</p>
-                       </div>
-                       <div class="trilha-box" data-trilha="backend">
-                           <img src="assets/backend.png" alt="Back-end">
-                           <p>Programação Back-end</p>
-                       </div>
-                       <div class="trilha-box" data-trilha="jogos">
-                           <img src="assets/jogos.png" alt="Jogos">
-                           <p>Programação de Jogos</p>
-                       </div>
-                       <div class="trilha-box" data-trilha="design">
-                           <img src="assets/jogos.png" alt="Design">
-                           <p>Design e Experiência</p>
-                       </div>
-                       <div class="trilha-box" data-trilha="dados">
-                           <img src="assets/dados.png" alt="Dados">
-                           <p>Ciência de Dados</p>
-                       </div>
-                   </div>
-                   <input type="hidden" id="trilhaSelecionada" name="trilhaSelecionada" required>
+                    </div>
 
                     <div class="input-box">
-                        <label for="email">E-mail ou ID</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail ou ID" required>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Ex: São Luís" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" placeholder="MA" required>
+                    </div>
+
+                    <div class="container__formulario__anexos">
+                        <h4 class="documento_identidade">Comprovante de Residência</h4>
+                        <input class="input-document" type="file" id="comprovanteResidencia" name="comprovanteResidencia" required>
+                    </div>
+
+                    <h2>Trilhas de Aprendizagem</h2>
+
+                    <div class="trilhas-container">
+                        <div class="trilha-box" data-trilha="frontend">
+                            <img src="assets/frontend.png" alt="Front-end">
+                            <p>Programação Front-end</p>
+                        </div>
+                        <div class="trilha-box" data-trilha="backend">
+                            <img src="assets/backend.png" alt="Back-end">
+                            <p>Programação Back-end</p>
+                        </div>
+                        <div class="trilha-box" data-trilha="jogos">
+                            <img src="assets/jogos.png" alt="Jogos">
+                            <p>Programação de Jogos</p>
+                        </div>
+                        <div class="trilha-box" data-trilha="design">
+                            <img src="assets/jogos.png" alt="Design">
+                            <p>Design e Experiência</p>
+                        </div>
+                        <div class="trilha-box" data-trilha="dados">
+                            <img src="assets/dados.png" alt="Dados">
+                            <p>Ciência de Dados</p>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="trilhaSelecionada" name="trilhaSelecionada" required>
+
+                    <div class="input-box">
+                        <label for="emailOuId">E-mail ou ID</label>
+                        <input type="email" id="emailOuId" name="emailOuId" placeholder="Digite seu e-mail ou ID" required>
+
                         <label for="senha">Senha</label>
-                        <input class="input-box" type="password" placeholder="Senha" required>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required>
                     </div>
+
+                    <div class="container__termos">
+                        <label class="container__termos__checkbox">
+                            <input type="checkbox" id="termos" name="termos" required>
+                            Declaro que li e concordo com os 
+                            <a href="link-para-termos" target="_blank"><strong>Termos e Condições</strong></a> 
+                            e com a 
+                            <a href="link-para-politica-privacidade" target="_blank"><strong>Política de Privacidade.</strong></a>
+                        </label>
                     </div>
-                   <div class="container__termos">
-                    <label class="container__termos__checkbox">
-                       <input type="checkbox" id="termos" name="termos" required>
-                       Declaro que li e concordo com os 
-                       <a href="link-para-termos" target="_blank"><strong>Termos e Condições</strong></a> 
-                       e com a 
-                       <a href="link-para-politica-privacidade" target="_blank"><strong>Política de Privacidade.</strong></a>
-                    </label>
-                   </div>
-                   <div class="container__botoes">
-                   <div class="container__botoes__menu">
-                        <a class="container__botao__cancelar" href="#">Cancelar</a>
-                        <a class="container__botao__inscricao" href="#">Fazer Inscrição</a>
+
+                    <div class="container__botoes">
+                        <div class="container__botoes__menu">
+                            <a class="container__botao__cancelar" href="#">Cancelar</a>
+                            <button class="container__botao__inscricao" type="submit">Fazer Inscrição</button>
+                        </div>
                     </div>
-                   </div>
-               </form>
-           </div>
-    </main>   
+
+                </div>
+            </div>
+        </form>
+    </main>
+
     <div class="container__ilustracao">
         <div class="container__logos">
             <img class="container__logo__inova" src="assets/inova.png" alt="Ilustração do Inova">
             <img class="container__logo__trilhas" src="assets/logo-trilhas-inova.png" alt="Logo Trilhas Inova">
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
