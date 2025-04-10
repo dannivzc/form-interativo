@@ -6,10 +6,10 @@ uma iniciativa promovida pelo **InovaMaranhão** em parceria com a **FAPEMA** e 
 programa, com foco na formação em tecnologia.
 
 ### 🔐 Tela de Login
-![Tela de Login](./assets/tela-login.png)
+![Tela de Login](tela-login.png)
 
 ### 📋 Formulário de Inscrição
-![Formulário de Inscrição](./assets/formulario-inscricao.png)
+![Formulário de Inscrição](formulario-inscricao.png)
 
 ## 🏁 Desafios
 
