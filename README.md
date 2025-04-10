@@ -1,9 +1,15 @@
 # 🚀 Sistema de Inscrição para o Programa Trilhas Inova Maranhão
 
 Este projeto é um sistema de inscrição desenvolvido para o **Programa Trilhas Inova Maranhão**, 
-uma iniciativa promovida pelo **InovaMaranhão** em parceria com a **FAPEMA** e a **SECTI**. O ob
-jetivo é proporcionar uma plataforma simples e interativa para a inscrição de jovens e adultos no
-programa, com foco na formação em tecnologias digitais.
+uma iniciativa promovida pelo **InovaMaranhão** em parceria com a **FAPEMA** e a **SECTI**. O objetivo
+é proporcionar uma plataforma simples e interativa para a inscrição de jovens e adultos no
+programa, com foco na formação em tecnologia.
+
+### 🔐 Tela de Login
+![Tela de Login](./assets/tela-login.png)
+
+### 📋 Formulário de Inscrição
+![Formulário de Inscrição](./assets/formulario-inscricao.png)
 
 ## 🏁 Desafios
 
