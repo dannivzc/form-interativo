@@ -11,6 +11,12 @@ programa, com foco na formação em tecnologia.
 ### 📋 Formulário de Inscrição
 ![Formulário de Inscrição](formulario-inscricao.png)
 
+## 💻 Como rodar localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/dannivzc/form-interativo.git
+
 ## 🏁 Desafios
 
 ### 2️⃣ Desafio 2: Formulário Estático de Inscrição
