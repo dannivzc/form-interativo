@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Salva dadosFormulario no LocalStorage
                 localStorage.setItem('dadosFormulario', JSON.stringify(dadosFormulario));
+                
+                alert('INSCRIÇÃO REALIZADA COM SUCESSO');
                 window.location.href = 'success.html';
             }
         });
@@ -130,8 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data.erro) {
                     throw new Error('CEP não encontrado');
                 }
-                
-                // Quando digitada corretamente, Preenche esses campos
                 document.getElementById('rua').value = data.logradouro || '';
                 document.getElementById('cidade').value = data.localidade || '';
                 document.getElementById('estado').value = data.uf || '';
@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
     // Event listeners
     document.getElementById('cep').addEventListener('blur', buscarCEP);
     
